@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/coverageIcon"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        android:background="@drawable/connection_error" />
+
+    <TextView
+        android:id="@+id/no_result"
+        style="@style/normal_text_black"
+        android:layout_marginLeft="@dimen/dimen_48"
+        android:layout_marginRight="@dimen/dimen_48"
+        android:layout_marginTop="@dimen/normal"
+        android:gravity="center"
+        android:text="Whoops!"
+        android:textColor="@color/disable_text"
+        android:textSize="@dimen/font_huge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/zero_res_txt"
+        style="@style/normal_text_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small"
+        android:gravity="center"
+        android:text="Some Problem occurred, please try again!"
+        android:textColor="@color/secondary_text" />
+
+    <Button
+        android:id="@+id/retry_button"
+        style="@style/normal_text"
+        android:layout_marginTop="@dimen/normal"
+        android:background="@drawable/dark_round_corner_bg"
+        android:paddingLeft="@dimen/dimen_40"
+        android:paddingRight="@dimen/dimen_40"
+        android:text="@string/retry" />
+
+</LinearLayout>
